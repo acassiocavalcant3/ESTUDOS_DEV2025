@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA002_COMENTARIOS/1.0.0": {
+        "runtime": {
+          "AULA002_COMENTARIOS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA002_COMENTARIOS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
