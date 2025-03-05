@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA004_ESCOPO_DE_VARIAVEIS/1.0.0": {
+        "runtime": {
+          "AULA004_ESCOPO_DE_VARIAVEIS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA004_ESCOPO_DE_VARIAVEIS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

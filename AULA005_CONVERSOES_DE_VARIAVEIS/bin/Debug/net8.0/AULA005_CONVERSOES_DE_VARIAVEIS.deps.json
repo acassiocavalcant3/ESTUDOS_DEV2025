@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA005_CONVERSOES_DE_VARIAVEIS/1.0.0": {
+        "runtime": {
+          "AULA005_CONVERSOES_DE_VARIAVEIS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA005_CONVERSOES_DE_VARIAVEIS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -32,7 +32,7 @@ class program
         object qtdEmpresas = 6; // não posso mudar o tipo de var posteriormente, //a não ser que seja atribuindo
         object nomeEmpresas = "Tesla, SpaceX, Neuralink, The Boring Company, X (anteriormente Twitter), xAI";
 
-        Console.WriteLine("\n***INFORMACOES DO ELON MUSK***\n");
+        Console.WriteLine("\n***INFORMAÇÕES DO ELON MUSK***\n");
         Console.WriteLine("NOME: " +nome);
         Console.WriteLine("SEXO: " + sexo);
         Console.WriteLine("IDADE: " + idade);
