@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA011_OPERADORES_TERNARIOS_CONDICIONAL/1.0.0": {
+        "runtime": {
+          "AULA011_OPERADORES_TERNARIOS_CONDICIONAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA011_OPERADORES_TERNARIOS_CONDICIONAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

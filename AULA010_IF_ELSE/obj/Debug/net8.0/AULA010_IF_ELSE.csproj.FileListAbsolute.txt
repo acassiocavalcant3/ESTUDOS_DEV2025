@@ -1,0 +1,15 @@
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\bin\Debug\net8.0\AULA010_IF_ELSE.exe
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\bin\Debug\net8.0\AULA010_IF_ELSE.deps.json
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\bin\Debug\net8.0\AULA010_IF_ELSE.runtimeconfig.json
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\bin\Debug\net8.0\AULA010_IF_ELSE.dll
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\bin\Debug\net8.0\AULA010_IF_ELSE.pdb
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.AssemblyInfoInputs.cache
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.AssemblyInfo.cs
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.csproj.CoreCompileInputs.cache
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.sourcelink.json
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.dll
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\refint\AULA010_IF_ELSE.dll
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.pdb
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\AULA010_IF_ELSE.genruntimeconfig.cache
+D:\Desktop\ESTUDOS_DEV2025\AULA010_IF_ELSE\obj\Debug\net8.0\ref\AULA010_IF_ELSE.dll
