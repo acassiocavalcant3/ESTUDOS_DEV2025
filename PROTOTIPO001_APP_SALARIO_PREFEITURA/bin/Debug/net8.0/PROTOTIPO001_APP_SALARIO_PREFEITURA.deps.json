@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PROTOTIPO001_APP_SALARIO_PREFEITURA/1.0.0": {
+        "runtime": {
+          "PROTOTIPO001_APP_SALARIO_PREFEITURA.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROTOTIPO001_APP_SALARIO_PREFEITURA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

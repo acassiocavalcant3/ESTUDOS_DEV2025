@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 class Program 
 {
 
-    static void Main (string[]args)
-    {
-        back1:
+    static void Main ()
+    {        
         //DESCRICAO
         Console.WriteLine("\n\t***COMENTÁRIOS***\n");
-        
+        Console.WriteLine("\nOs comentarios estão no código");
+
         // este é um comentário em C# (LINHA UNICA)
 
         /* COMENTÁRIO
@@ -25,18 +25,32 @@ class Program
 
         /* No visual studio é possível tornar um código  em comentário através do atalho: ctrl+k,C e descomentar ctrl+K,U */
 
-        Console.WriteLine("\nDeseja executar novamente? [s/n]");
-        char escolha = char.Parse(Console.ReadLine());
-        if (escolha == 'S' || escolha == 's')
+        
+    }
+    static void ReiniciarPrograma()
+    {
+        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+        string escolha = Console.ReadLine();
+
+        switch (escolha)
         {
-            Console.Clear();
-            goto back1;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("\nFim da execução. Tecle enter para sair... \n");
-            Console.ReadLine();
+            case "s":
+            case "S":
+                Main();
+                break;
+
+            case "n":
+            case "N":
+                break;
+
+            default:
+                Console.WriteLine("******************************************************");
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                ReiniciarPrograma();
+                break;
         }
     }
 }

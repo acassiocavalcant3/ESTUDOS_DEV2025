@@ -36,9 +36,8 @@ class program
     static int idade = 30;
     static double saldo = 250.6542;
 
-    static void Main(string[] args)
-    {
-    back1:
+    static void Main()
+    {    
         //DESCRICAO ALGOTIMOS COM TECNICAS PARA FORMATAR STRINGS
         Console.WriteLine("\n\t***FORMATACAO DE STRINGS***\n");
 
@@ -49,22 +48,11 @@ class program
         //Placeholders();
         //AdicionarEspacoes();
         //FormatacaoMonetaria();
-        FormatacaoPorcentagem();
+        //FormatacaoPorcentagem();
 
+        MenuFormatarStrings();
 
-        Console.WriteLine("\nDeseja executar novamente? [s/n]");
-        char escolha = char.Parse(Console.ReadLine());
-        if (escolha == 'S' || escolha == 's')
-        {
-            Console.Clear();
-            goto back1;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("\nFim da execução. Tecle enter para sair... \n");
-            Console.ReadLine();
-        }
+        ReiniciarPrograma();
     }
 
     static void FormatarComBarraNeBarrat()
@@ -159,5 +147,95 @@ class program
         /*************************************************************************************/
     }
 
+    static void MenuFormatarStrings()
+    {
+        Console.Clear();
+        Console.WriteLine("\tSELECIONE A DEMONSTRACAO: \n");
+        Console.WriteLine("************************************************************\n");
+        Console.WriteLine("Formatar Com Barra N e Barra t______________________DIGITE 1\n");
+        Console.WriteLine("Formatar Com Interpolacao___________________________DIGITE 2\n");
+        Console.WriteLine("Formatar Com Placeholders___________________________DIGITE 3\n");
+        Console.WriteLine("Adicionar Espacoes__________________________________DIGITE 4\n");
+        Console.WriteLine("Formatacao monetária________________________________DIGITE 5\n");
+        Console.WriteLine("Formatar Com Porcentagem____________________________DIGITE 6\n");
+        Console.WriteLine("Encerrar o programa_________________________________DIGITE 0\n");
+
+        Console.WriteLine("************************************************************\n");
+
+        int escolha = Convert.ToInt32(Console.ReadLine());
+
+        switch (escolha)
+        {
+            case 1:                               
+                Console.Clear();
+                FormatarComBarraNeBarrat();                
+                break;
+
+            case 2:
+                Console.Clear();
+                Interpolacao();
+                break;
+
+            case 3:
+                Console.Clear();
+                Placeholders();                
+                break;
+
+            case 4:
+                Console.Clear();
+                AdicionarEspacoes();
+                break;
+
+            case 5:
+                Console.Clear();
+                FormatacaoMonetaria();                
+                break;
+
+            case 6:
+                Console.Clear();
+                FormatacaoPorcentagem();
+                break;
+
+            case 0:
+                Console.Clear();
+                Console.WriteLine("\tPROGRAMA FINALLIZADO! \nAPERTE ENTER E PARA SAIR!\n");
+                Console.ReadLine();
+                break;
+
+            default:
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                MenuFormatarStrings();
+                break;
+        }
+    }
+
+    static void ReiniciarPrograma()
+    {
+        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+        string escolha = Console.ReadLine();
+
+        switch (escolha)
+        {
+            case "s":
+            case "S":
+                Main();
+                break;
+
+            case "n":
+            case "N":
+                break;
+
+            default:
+                Console.WriteLine("******************************************************");
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                ReiniciarPrograma();
+                break;
+        }
+    }
 
 }

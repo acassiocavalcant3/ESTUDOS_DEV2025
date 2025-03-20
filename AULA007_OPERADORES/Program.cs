@@ -47,7 +47,7 @@ A sintaxe dele é: teste lógico ? valor se verdadeiro : valor se falso;
 class program
 {
 
-    static void Main(string[] args)
+    static void Main()
     {
     back1:
         //DESCRICAO DO ALGORITMO
@@ -126,19 +126,33 @@ class program
         Console.WriteLine("TESTANDO OPERADORES BITWISE: \n\nRESULTADO DO DESLOCAMENTOD DOS BITS PARA A ESQUERDA: {0}\nRESULTADO DO DO DESLOCAMENTOD DOS BITS PARA A DIREITA: {1}", num1 = num1 << 1, num2 = num2 >> 2);
         Console.WriteLine("**********************************\n");
 
-        //LOOP DE EXECUCAO COM ROTULO
-        Console.WriteLine("\nDeseja executar novamente? [s/n]");
-        char escolha = char.Parse(Console.ReadLine());
-        if (escolha == 'S' || escolha == 's')
+        ReiniciarPrograma();   
+    }
+
+    static void ReiniciarPrograma()
+    {
+        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+        string escolha = Console.ReadLine();
+
+        switch (escolha)
         {
-            Console.Clear();
-            goto back1;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("\nFim da execução. Tecle enter para sair... \n");
-            Console.ReadLine();
+            case "s":
+            case "S":
+                Main();
+                break;
+
+            case "n":
+            case "N":
+                break;
+
+            default:
+                Console.WriteLine("******************************************************");
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                ReiniciarPrograma();
+                break;
         }
     }
 }

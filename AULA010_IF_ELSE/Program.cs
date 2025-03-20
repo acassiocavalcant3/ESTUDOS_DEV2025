@@ -25,7 +25,7 @@ class program
     static double media = 0;
     const int notaDeCorte = 70;
 
-    static void Main(string[] args)
+    static void Main()
     {
     back1:
         //DESCRICAO OPERADORES TERNARIOS (ESTRUTURA CONDICIONAL)

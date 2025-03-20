@@ -22,7 +22,7 @@ class program
     
     static int numeroVG = 10;
 
-    static void Main(string[] args)//ESCOPO 1  
+    static void Main()//ESCOPO 1  
     {
     back1:
         //DESCRICAO
@@ -37,28 +37,45 @@ class program
         Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 10:" + numeroVL );
         Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 20:" + soma);
 
-        Console.WriteLine("\nDeseja executar novamente? [s/n]");
-        char escolha = char.Parse(Console.ReadLine());
-        if (escolha == 'S' || escolha == 's')
-        {
-            Console.Clear();
-            goto back1;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("\nFim da execução. Tecle enter para sair... \n");
-            Console.ReadLine();
-        }
+        ReiniciarPrograma();
     }
 
     /*
         //aqui esta comentado, senao o codigo daria erro, pois a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
 
-    static void secundario(string[] args)//ESCOPO 2
+    static void secundario()//ESCOPO 2
     {
         Console.WriteLine("\n\t***VARIAVEL DENTRO DO ESCOPO. NUMERO: ", numeroVL); //a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
     } 
     */
 
+    static void ReiniciarPrograma()
+    {
+        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+        string escolha = Console.ReadLine();
+
+        switch (escolha)
+        {
+            case "s":
+            case "S":
+                Main();
+                break;
+
+            case "n":
+            case "N":
+                break;
+
+            default:
+                Console.WriteLine("******************************************************");
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                ReiniciarPrograma();
+                break;
+        }
+    }
+
 }
+
+

@@ -24,7 +24,7 @@ class program
 
     static string linguagemDeProgramacao;
 
-    static void Main(string[] args)
+    static void Main()
     {
     back1:
     inicio:
@@ -56,8 +56,8 @@ class program
             Console.WriteLine($"voce escolheu a linguagem de programacao {linguagemDeProgramacao}.");
 
             Console.WriteLine("\nDeseja executar novamente? [s/n]");
-            char escolha = char.Parse(Console.ReadLine());
-            if (escolha == 'S' || escolha == 's')
+            string escolha = Console.ReadLine();
+            if (escolha == "S" || escolha == "s")
             {
                 Console.Clear();
                 goto back1;
@@ -69,5 +69,6 @@ class program
                 Console.ReadLine();
             }
         }
+
 }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AULA011_OPERADORES_TERNARIOS_CONDICIONAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82ee29f66a52d3b56b472f27247041597ae546d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb29c8164a10f0f2f20db052cdfe01226d384fff")]
 [assembly: System.Reflection.AssemblyProductAttribute("AULA011_OPERADORES_TERNARIOS_CONDICIONAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AULA011_OPERADORES_TERNARIOS_CONDICIONAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

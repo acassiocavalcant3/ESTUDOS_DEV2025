@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 //Diretivas using
 using System;
 using System;
@@ -21,7 +21,7 @@ FAÇA UM PROGRMA PARA LER UM NÚMERO INTEIRO E DEPOIS DIZER SE ESTE NÚMERO É I
 class program
 {
 
-    static void Main(string[] args)
+    static void Main()
     {
     back1:
         //EXERCÍCIO 002 -  ÍMPAR OU PAR
@@ -39,18 +39,33 @@ class program
             Console.Write($"\nO NUMERO {oNumeroDeEntrada} É PAR!: \n");
         }
 
-        Console.WriteLine("\nDeseja executar novamente? [s/n]");
-        char escolha = char.Parse(Console.ReadLine());
-        if (escolha == 'S' || escolha == 's')
+        ReiniciarPrograma();   
+    }
+
+    static void ReiniciarPrograma()
+    {
+        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+        string escolha = Console.ReadLine();
+
+        switch (escolha)
         {
-            Console.Clear();
-            goto back1;
-        }
-        else
-        {
-            Console.Clear();
-            Console.WriteLine("\nFim da execução. Tecle enter para sair... \n");
-            Console.ReadLine();
+            case "s":
+            case "S":
+                Main();
+                break;
+
+            case "n":
+            case "N":
+                break;
+
+            default:
+                Console.WriteLine("******************************************************");
+                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();
+                ReiniciarPrograma();
+                break;
         }
     }
 }
