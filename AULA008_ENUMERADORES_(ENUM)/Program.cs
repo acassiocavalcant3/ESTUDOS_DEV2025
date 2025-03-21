@@ -30,78 +30,82 @@ using System.Threading.Tasks;
 
 */
 
-class program
+namespace AulasCsharp2025
 {
 
-    enum DiasDaSemana//PASCAL CASE
+    class program
     {
-        Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado
 
-    };
-
-    enum PeriodosDoDia//PASCAL CASE
-    {
-        Matutino, Vespertino, Noturno
-
-    };
-
-    static void Main()
-    {
-    back1:
-        //DESCRICAO
-        Console.WriteLine("\n\t***ENUMERADORES (ENUMS)***\n");
-
-        DiasDaSemana dia = DiasDaSemana.Domingo;
-        PeriodosDoDia periodo = PeriodosDoDia.Noturno;
-
-        Console.WriteLine("TESTANDO ENUMERADORES (ENUMS) \n\nEU COSTUMO IR PARA A IGREJA NO {0}, NO PERIODO {1}", dia, periodo);
-        Console.WriteLine("**********************************\n");
-        Console.WriteLine("PRESSIONE ENTER PRA CONTINUAR");
-        Console.ReadKey(); //DEIXA O CURSOR AGUARDANDO O ENTER 
-        Console.Clear();//LIMPA A TELA
-
-        //ALGORITMO TESTE2
-        Console.WriteLine("QUAL DIA DA SEMANA É HOJE?\n");
-        Console.WriteLine("DIGITE O NÚMERO CORRESPONDENTE: ");
-        Console.WriteLine("0 - DOMINGO\n" + "1 - SEGUNDA\n" + "2 - TERÇA\n" + "3 - QUARTA\n" +
-        "4 - QUINTA\n" + "5 - SEXTA\n" + "6 - SABADO\n");
-        DiasDaSemana diaSemana = (DiasDaSemana)Convert.ToInt32(Console.ReadLine());
-        /*o numero digitado é captado com o metodo Console.ReadLine(),então mesmo sendo um numero, ele é do tipo string. Convertemos o numero digitado de string pra int, com o métododo convert.To e depois fazemos cast de enum, passando o numero como indice;*/
-        Console.WriteLine("\nQUAL PERIODO DO DIA É AGORA?\n");
-        Console.WriteLine("DIGITE O NÚMERO CORRESPONDENTE: ");
-        Console.WriteLine("0 - MATUTINO\n" + "1 - VESPERTINO\n" + "2 - NOTURNO\n");
-        PeriodosDoDia periodoDia = (PeriodosDoDia)Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("TESTANDO ENUMERADORES (ENUMS: \n\nNO MOMENTO DA EXECUCAO DESSE ALGORITMO, É {0}, NO PERÍODO {1}", diaSemana, periodoDia);
-        Console.WriteLine("**********************************\n");
-
-
-        ReiniciarPrograma();
-    }
-
-    static void ReiniciarPrograma()
-    {
-        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
-
-        string escolha = Console.ReadLine();
-
-        switch (escolha)
+        enum DiasDaSemana//PASCAL CASE
         {
-            case "s":
-            case "S":
-                Main();
-                break;
+            Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado
 
-            case "n":
-            case "N":
-                break;
+        };
 
-            default:
-                Console.WriteLine("******************************************************");
-                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
-                Console.Clear();
-                ReiniciarPrograma();
-                break;
+        enum PeriodosDoDia//PASCAL CASE
+        {
+            Matutino, Vespertino, Noturno
+
+        };
+
+        static void Main()
+        {
+        back1:
+            //DESCRICAO
+            Console.WriteLine("\n\t***ENUMERADORES (ENUMS)***\n");
+
+            DiasDaSemana dia = DiasDaSemana.Domingo;
+            PeriodosDoDia periodo = PeriodosDoDia.Noturno;
+
+            Console.WriteLine("TESTANDO ENUMERADORES (ENUMS) \n\nEU COSTUMO IR PARA A IGREJA NO {0}, NO PERIODO {1}", dia, periodo);
+            Console.WriteLine("**********************************\n");
+            Console.WriteLine("PRESSIONE ENTER PRA CONTINUAR");
+            Console.ReadKey(); //DEIXA O CURSOR AGUARDANDO O ENTER 
+            Console.Clear();//LIMPA A TELA
+
+            //ALGORITMO TESTE2
+            Console.WriteLine("QUAL DIA DA SEMANA É HOJE?\n");
+            Console.WriteLine("DIGITE O NÚMERO CORRESPONDENTE: ");
+            Console.WriteLine("0 - DOMINGO\n" + "1 - SEGUNDA\n" + "2 - TERÇA\n" + "3 - QUARTA\n" +
+            "4 - QUINTA\n" + "5 - SEXTA\n" + "6 - SABADO\n");
+            DiasDaSemana diaSemana = (DiasDaSemana)Convert.ToInt32(Console.ReadLine());
+            /*o numero digitado é captado com o metodo Console.ReadLine(),então mesmo sendo um numero, ele é do tipo string. Convertemos o numero digitado de string pra int, com o métododo convert.To e depois fazemos cast de enum, passando o numero como indice;*/
+            Console.WriteLine("\nQUAL PERIODO DO DIA É AGORA?\n");
+            Console.WriteLine("DIGITE O NÚMERO CORRESPONDENTE: ");
+            Console.WriteLine("0 - MATUTINO\n" + "1 - VESPERTINO\n" + "2 - NOTURNO\n");
+            PeriodosDoDia periodoDia = (PeriodosDoDia)Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("TESTANDO ENUMERADORES (ENUMS: \n\nNO MOMENTO DA EXECUCAO DESSE ALGORITMO, É {0}, NO PERÍODO {1}", diaSemana, periodoDia);
+            Console.WriteLine("**********************************\n");
+
+
+            ReiniciarPrograma();
+        }
+
+        static void ReiniciarPrograma()
+        {
+            Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+            string escolha = Console.ReadLine();
+
+            switch (escolha)
+            {
+                case "s":
+                case "S":
+                    Main();
+                    break;
+
+                case "n":
+                case "N":
+                    break;
+
+                default:
+                    Console.WriteLine("******************************************************");
+                    Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                    Console.ReadLine();
+                    Console.Clear();
+                    ReiniciarPrograma();
+                    break;
+            }
         }
     }
 }

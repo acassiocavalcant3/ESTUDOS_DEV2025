@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA015_ARRAYS_BIDIMENSIONAIS_MATRIZES/1.0.0": {
+        "runtime": {
+          "AULA015_ARRAYS_BIDIMENSIONAIS_MATRIZES.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA015_ARRAYS_BIDIMENSIONAIS_MATRIZES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

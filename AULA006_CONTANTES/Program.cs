@@ -15,49 +15,52 @@ CONSTANTES
 Usa a palavra reservada "const"
 */
 
-class program
+namespace AulasCsharp2025
 {
-
-    static void Main()
+    class program
     {
-        //DESCRICAO DO ALGORITMO
-        Console.WriteLine("\n\t***CONSTANTES***\n");
 
-        //DECLARACAO DE CONSTANTES
-        const int horasDoDia = 24;//se eu tentar atribuir outro valor pra essas variaveis, vai dar erro
-        const float pi = 3.14f;
-
-        Console.WriteLine("QUANTIDADE DE HORAS NO DIA E VALOR DE PI, SÃO EXEMPLOS DE CONSTANTES.");
-        Console.WriteLine("HORAS DO DIA: {0}\nCONSTANTE DE PI: {1}  ",horasDoDia, pi);// usei a forma de indice para concatenar
-
-
-        ReiniciarPrograma();
-    }
-
-    static void ReiniciarPrograma()
-    {
-        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
-
-        string escolha = Console.ReadLine();
-
-        switch (escolha)
+        static void Main()
         {
-            case "s":
-            case "S":
-                Main();
-                break;
+            //DESCRICAO DO ALGORITMO
+            Console.WriteLine("\n\t***CONSTANTES***\n");
 
-            case "n":
-            case "N":
-                break;
+            //DECLARACAO DE CONSTANTES
+            const int horasDoDia = 24;//se eu tentar atribuir outro valor pra essas variaveis, vai dar erro
+            const float pi = 3.14f;
 
-            default:
-                Console.WriteLine("******************************************************");
-                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
-                Console.Clear();
-                ReiniciarPrograma();
-                break;
+            Console.WriteLine("QUANTIDADE DE HORAS NO DIA E VALOR DE PI, SÃO EXEMPLOS DE CONSTANTES.");
+            Console.WriteLine("HORAS DO DIA: {0}\nCONSTANTE DE PI: {1}  ", horasDoDia, pi);// usei a forma de indice para concatenar
+
+
+            ReiniciarPrograma();
+        }
+
+        static void ReiniciarPrograma()
+        {
+            Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+            string escolha = Console.ReadLine();
+
+            switch (escolha)
+            {
+                case "s":
+                case "S":
+                    Main();
+                    break;
+
+                case "n":
+                case "N":
+                    break;
+
+                default:
+                    Console.WriteLine("******************************************************");
+                    Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                    Console.ReadLine();
+                    Console.Clear();
+                    ReiniciarPrograma();
+                    break;
+            }
         }
     }
 }

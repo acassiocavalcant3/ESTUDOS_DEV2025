@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA014_ARRAYS_UNIDIMENSIONAIS_VETORES/1.0.0": {
+        "runtime": {
+          "AULA014_ARRAYS_UNIDIMENSIONAIS_VETORES.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA014_ARRAYS_UNIDIMENSIONAIS_VETORES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -17,65 +17,65 @@ using System.Threading.Tasks;
     Portanto as variáveis criadas e atribuídas em um escopo pai(variável global), podem ser utilizadas em escopos filhos. Mas uma variável criada e atribuída em um escopo filho(variável local), não existe no contexto de um escopo pai
 */
 
-class program
+namespace AulasCsharp2025
 {
-    
-    static int numeroVG = 10;
-
-    static void Main()//ESCOPO 1  
+    class program
     {
-    back1:
-        //DESCRICAO
-        Console.WriteLine("\n\t***ESCOPO DE VARIAVEIS***\n");
 
+        static int numeroVG = 10;
 
-        //nesse caso numeroVL só funciona dentro do escopo  do metodo main. Se eu tentar trabalhar com ele em outro
-        int numeroVL = 10;
-        int soma = numeroVL+ numeroVG;
-        ;
-
-        Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 10:" + numeroVL );
-        Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 20:" + soma);
-
-        ReiniciarPrograma();
-    }
-
-    /*
-        //aqui esta comentado, senao o codigo daria erro, pois a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
-
-    static void secundario()//ESCOPO 2
-    {
-        Console.WriteLine("\n\t***VARIAVEL DENTRO DO ESCOPO. NUMERO: ", numeroVL); //a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
-    } 
-    */
-
-    static void ReiniciarPrograma()
-    {
-        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
-
-        string escolha = Console.ReadLine();
-
-        switch (escolha)
+        static void Main()//ESCOPO 1  
         {
-            case "s":
-            case "S":
-                Main();
-                break;
+        back1:
+            //DESCRICAO
+            Console.WriteLine("\n\t***ESCOPO DE VARIAVEIS***\n");
 
-            case "n":
-            case "N":
-                break;
 
-            default:
-                Console.WriteLine("******************************************************");
-                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
-                Console.Clear();
-                ReiniciarPrograma();
-                break;
+            //nesse caso numeroVL só funciona dentro do escopo  do metodo main. Se eu tentar trabalhar com ele em outro
+            int numeroVL = 10;
+            int soma = numeroVL + numeroVG;
+            ;
+
+            Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 10:" + numeroVL);
+            Console.WriteLine("SE SAIU A VARIAVEL LOCAL O VALOR DA VARIAVEL É 20:" + soma);
+
+            ReiniciarPrograma();
+        }
+
+        /*
+            //aqui esta comentado, senao o codigo daria erro, pois a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
+
+        static void secundario()//ESCOPO 2
+        {
+            Console.WriteLine("\n\t***VARIAVEL DENTRO DO ESCOPO. NUMERO: ", numeroVL); //a variavel numeroVL não é reconhecida, pois nao foi atribuida nesse escopo do metodo secundario
+        } 
+        */
+
+        static void ReiniciarPrograma()
+        {
+            Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+            string escolha = Console.ReadLine();
+
+            switch (escolha)
+            {
+                case "s":
+                case "S":
+                    Main();
+                    break;
+
+                case "n":
+                case "N":
+                    break;
+
+                default:
+                    Console.WriteLine("******************************************************");
+                    Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                    Console.ReadLine();
+                    Console.Clear();
+                    ReiniciarPrograma();
+                    break;
+            }
         }
     }
-
 }
-
-

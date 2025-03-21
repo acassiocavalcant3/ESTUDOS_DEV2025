@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROTOTIPO001_APP_SALARIO_PREFEITURA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb29c8164a10f0f2f20db052cdfe01226d384fff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31625fe143175e255186ed40fbb0e174ee3df7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROTOTIPO001_APP_SALARIO_PREFEITURA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROTOTIPO001_APP_SALARIO_PREFEITURA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

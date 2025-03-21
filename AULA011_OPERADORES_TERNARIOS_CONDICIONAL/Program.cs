@@ -17,58 +17,60 @@ using System.Threading.Tasks;
 Eu posso adicionar mais uma condição incluindo um else if, ficando três possibilidades conforme o resultado das condições
 
 */
-
-class program
+namespace AulasCsharp2025
 {
-
-    static int nota1, nota2, nota3, nota4;
-    static double media = 0;
-    const double notaDecorte = 70;
-
-    static void Main()
+    class program
     {
-        //DESCRICAO ESTRUTURAS CONDICIONAIS - IF E ELSE
-        Console.WriteLine("\n\t***IF E ELSE - MEDIA ESCOLAR***\n");
-        Console.WriteLine("DIGITE A NOTA DO 1º BIMESTRE: ");
-        nota1 = int.Parse(Console.ReadLine());
-        Console.WriteLine("DIGITE A NOTA DO 2º BIMESTRE: ");
-        nota2 = int.Parse(Console.ReadLine());
-        Console.WriteLine("DIGITE A NOTA DO 3º BIMESTRE: ");
-        nota3 = int.Parse(Console.ReadLine());
-        Console.WriteLine("DIGITE A NOTA DO 4º BIMESTRE: ");
-        nota4 = int.Parse(Console.ReadLine());
 
-        media = ((nota1 + nota2 + nota3 + nota4) / 4);
-        Console.WriteLine(media >= notaDecorte ? "ALUNO APROVADO!" : "ALUNO REPROVADO!");
-        Console.WriteLine($"Sua nota foi {media}.");
+        static int nota1, nota2, nota3, nota4;
+        static double media = 0;
+        const double notaDecorte = 70;
 
-        ReiniciarPrograma();
-    }
-
-    static void ReiniciarPrograma()
-    {
-        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
-
-        string escolha = Console.ReadLine();
-
-        switch (escolha)
+        static void Main()
         {
-            case "s":
-            case "S":
-                Main();
-                break;
+            //DESCRICAO ESTRUTURAS CONDICIONAIS - IF E ELSE
+            Console.WriteLine("\n\t***IF E ELSE - MEDIA ESCOLAR***\n");
+            Console.WriteLine("DIGITE A NOTA DO 1º BIMESTRE: ");
+            nota1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("DIGITE A NOTA DO 2º BIMESTRE: ");
+            nota2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("DIGITE A NOTA DO 3º BIMESTRE: ");
+            nota3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("DIGITE A NOTA DO 4º BIMESTRE: ");
+            nota4 = int.Parse(Console.ReadLine());
 
-            case "n":
-            case "N":
-                break;
+            media = ((nota1 + nota2 + nota3 + nota4) / 4);
+            Console.WriteLine(media >= notaDecorte ? "ALUNO APROVADO!" : "ALUNO REPROVADO!");
+            Console.WriteLine($"Sua nota foi {media}.");
 
-            default:
-                Console.WriteLine("******************************************************");
-                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
-                Console.Clear();
-                ReiniciarPrograma();
-                break;
+            ReiniciarPrograma();
+        }
+
+        static void ReiniciarPrograma()
+        {
+            Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+
+            string escolha = Console.ReadLine();
+
+            switch (escolha)
+            {
+                case "s":
+                case "S":
+                    Main();
+                    break;
+
+                case "n":
+                case "N":
+                    break;
+
+                default:
+                    Console.WriteLine("******************************************************");
+                    Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                    Console.ReadLine();
+                    Console.Clear();
+                    ReiniciarPrograma();
+                    break;
+            }
         }
     }
 }

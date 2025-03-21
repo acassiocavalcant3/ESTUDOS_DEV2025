@@ -18,54 +18,58 @@ FAÇA UM PROGRMA PARA LER UM NÚMERO INTEIRO E DEPOIS DIZER SE ESTE NÚMERO É I
 
 */
 
-class program
+namespace ExercicioCsharp2025
 {
 
-    static void Main()
+    class program
     {
-    back1:
-        //EXERCÍCIO 002 -  ÍMPAR OU PAR
-        int oNumeroDeEntrada;
-        Console.WriteLine("\n\t***DESCOBRINDO SE UM NUMERO E ÍMPAR OU PAR***\n");
-        Console.Write("DIGITE UM NÚMERO: ");
-        oNumeroDeEntrada = int.Parse(Console.ReadLine());//USANDO PARSE PARA A CONVERSÃO
-        
-        if ((oNumeroDeEntrada % 2== 1))
+
+        static void Main()
         {
-            Console.Write($"\nO NUMERO {oNumeroDeEntrada} É ÍMPAR!: \n");
+        back1:
+            //EXERCÍCIO 002 -  ÍMPAR OU PAR
+            int oNumeroDeEntrada;
+            Console.WriteLine("\n\t***DESCOBRINDO SE UM NUMERO E ÍMPAR OU PAR***\n");
+            Console.Write("DIGITE UM NÚMERO: ");
+            oNumeroDeEntrada = int.Parse(Console.ReadLine());//USANDO PARSE PARA A CONVERSÃO
+
+            if ((oNumeroDeEntrada % 2 == 1))
+            {
+                Console.Write($"\nO NUMERO {oNumeroDeEntrada} É ÍMPAR!: \n");
+            }
+            else
+            {
+                Console.Write($"\nO NUMERO {oNumeroDeEntrada} É PAR!: \n");
+            }
+
+            ReiniciarPrograma();
         }
-        else
+
+        static void ReiniciarPrograma()
         {
-            Console.Write($"\nO NUMERO {oNumeroDeEntrada} É PAR!: \n");
-        }
+            Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
 
-        ReiniciarPrograma();   
-    }
+            string escolha = Console.ReadLine();
 
-    static void ReiniciarPrograma()
-    {
-        Console.WriteLine("\nDeseja executar o programa novamente? [s/n]");
+            switch (escolha)
+            {
+                case "s":
+                case "S":
+                    Main();
+                    break;
 
-        string escolha = Console.ReadLine();
+                case "n":
+                case "N":
+                    break;
 
-        switch (escolha)
-        {
-            case "s":
-            case "S":
-                Main();
-                break;
-
-            case "n":
-            case "N":
-                break;
-
-            default:
-                Console.WriteLine("******************************************************");
-                Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
-                Console.Clear();
-                ReiniciarPrograma();
-                break;
+                default:
+                    Console.WriteLine("******************************************************");
+                    Console.WriteLine("\tOPCAO INVALIDA! \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                    Console.ReadLine();
+                    Console.Clear();
+                    ReiniciarPrograma();
+                    break;
+            }
         }
     }
 }

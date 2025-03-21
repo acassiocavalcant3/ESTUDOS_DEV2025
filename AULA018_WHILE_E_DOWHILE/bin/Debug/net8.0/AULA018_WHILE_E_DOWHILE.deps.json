@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA018_WHILE_E_DOWHILE/1.0.0": {
+        "runtime": {
+          "AULA018_WHILE_E_DOWHILE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA018_WHILE_E_DOWHILE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
