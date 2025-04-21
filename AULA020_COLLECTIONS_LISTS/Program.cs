@@ -13,75 +13,102 @@ using System.Threading.Tasks;
 
 /*  COMENTARIOS
 
-# Array - vetores
-## vetores unidimensionais
-
-- Arrays são objetos que armazenam múltiplas variáveis de um mesmo tipo, eles são muito úteis quando trabalhamos com coleções de dados que possuem um tamanho previamente definido.
-- Todo array inicia-se a partir da posição zero, ou seja, se criarmos um objeto e definirmos com o tamanho de 5 elementos, o último índice será o de valor quatro e não cinco. Se tentarmos acessar o índice cinco em um array de 5 elementos, receberemos uma exceção em tempo de execução: System.IndexOutOfRangeException.
-
-⚠️ A primeira posição de um Array não é a posição um, ele começa do zero então um vetor de 5 posições tem os indices { 0, 1, 2, 3, 4}
-
+# LISTAS - vetores
 
 */
 
 namespace AulasCsharp2025
 {
-    class program
+    class Program
     {
-        //
-        //DECLARACAO DE ARRAYS
-        static double[] notas = new double[4];//UM ARRAY(VETOR) DO TIPO DOUBLE COM 4 POSICOES
-        static tipo[] nomeDoArray = new tipo[tamanhodoarray];
-
-        //DECLARACAO E ATRIBUICAO DE ARRAYS
-        static string[] alunos = { "Carla", "Danilo", "Eduardo", "Gustavo" };//UM ARRAY(VETOR) DO TIPO STRING COM 4 POSICOES
-                                                                             //static tipo[] nomeDoArray = {valores atribuidos e separados por vírgula};
-
-
-
-
-        ////VALORES PADROES DE ARRAYS
-        static int[] arrayInt = new int[5];//VALOR PADRÃO = 0 - vetor de int 
-        static string[] arrayString = new string[5];//VALOR PADRÃO = "" - vetor de string
-        static bool[] arrayBoolean = new bool[5];//VALOR PADRÃO = FALSE - vetor de bool
-        static double[] arrayDouble = new double[5];//VALOR PADRÃO = 0.0 - vetor de double
-                                                    //static ClasseArray[] arrayClasse = new ClasseArray[5];//VALOR PADRÃO = NULL - vetor de classe
-
-
-
         static void Main()
         {
+            //METODO Add//METODO PARA ADICIONAR A LISTA
+            List<string> listaDeNomes = new List<string>();
+            listaDeNomes.Add("Acassio");
+            listaDeNomes.Add("Jonas");
+            listaDeNomes.Add("Bia");
+            listaDeNomes.Add("Bianca");
+            listaDeNomes.Add("Marco");
+            listaDeNomes.Add("Mario");
+            listaDeNomes.Add("Maria");
 
-            //METODOS DE INTERAÇÃO COM O USUARIO
-            ApresentacaoAlgoritmo();
+            //METODO Insert//METODO PARA INSERIR NA LISTA NO INDICE QUE QUISER
+            listaDeNomes.Insert(2, "Jhonatan");
+
+            foreach (string nome in listaDeNomes)
+            {
+                System.Console.WriteLine(nome);
+            }
+
+            //PROPRIEDADE Count//PARA DESCOBRIR A QUANTIDADE DE ELEMENTOS NA LISTA
+            System.Console.WriteLine($"QUANTIDADE DE ELEMENTOS NA LISTA DE NOMES: {listaDeNomes.Count}");
+
+            //METODO Find//USA EXPRESSOES LAMBDA E PROCURA A PRIMEIRA OCORRENCIA, PRIMEIRA PALAVRA QUE COMECA COM B
+            string primeiroNome = listaDeNomes.Find(x => x[0] == 'B');
+            System.Console.WriteLine("\nPRIMEIRO NOME NA LISTA QUE COMEÇA COM N: " + primeiroNome);
+
+            //METODO FindLast//USA EXPRESSOES LAMBDA E PROCURA A ULTIMA OCORRENCIA, ULTIMA PALAVRA QUE COMECA COM B
+            string ultimoNome = listaDeNomes.FindLast(x => x[0] == 'B');
+            System.Console.WriteLine("\nULTIMO NOME NA LISTA QUE COMEÇA COM B: " + ultimoNome);
+
+            //METODO FindIndex//USA EXPRESSOES LAMBDA E PROCURA O INDICE DA PRIMEIR OCORRENCIA, PRIMEIRA PALAVRA QUE COMECA COM B
+            int primeiroIndex = listaDeNomes.FindIndex(x => x[0] == 'B');
+            System.Console.WriteLine("\nULTIMO INDICE NA LISTA QUE COMEÇA COM B: " + primeiroIndex);
+
+            //METODO FindLastIndex//USA EXPRESSOES LAMBDA E PROCURA O INDICE DA ULTIMA OCORRENCIA, ULTIMA PALAVRA QUE COMECA COM B
+            int ultimoIndex = listaDeNomes.FindLastIndex(x => x[0] == 'B');
+            System.Console.WriteLine("\nULTIMO INDICE NA LISTA QUE COMEÇA COM B: " + ultimoIndex);
+
+            //METODO FindAll//USA EXPRESSOES LAMBDA E FILTRA A LISTA E RETORNA UMA LISTA APENAS COM OS ELEMENTOS FILTRADOS
+            List<string> listaFiltrada = listaDeNomes.FindAll(x => x.Length == 5);//filtra nomes com 5 caracteres
+            System.Console.WriteLine("\nLISTA FILTRADA (apenas nomes com 5 caracteres): ");
+            foreach (string nome in listaFiltrada)
+            {
+                System.Console.WriteLine(nome);
+            }
+
+            //METODO Remove//REMOVE UM ELEMENTO
+            listaDeNomes.Remove("Acassio");// 
+            //METODO RemoveAt//REMOVE UM ELEMENTO COM BASE NO INDICE
+            listaDeNomes.RemoveAt(4);//
+
+
+            System.Console.WriteLine("---------------------------");
+            System.Console.WriteLine("LISTA DE NOMES APOS REMOCAO de Acassio e do elemento na posicao 4");
+            foreach (string nome in listaDeNomes)
+            {
+                System.Console.WriteLine(nome);
+            }
+
+
+            //METODO RemoveAll//USA PREDICADO E REMOVE DA LISTA UMA PALAVRA QUE COMECA COM M
+            listaDeNomes.RemoveAll(x => x[0] == 'M');// 
+            System.Console.WriteLine("---------------------------");
+            System.Console.WriteLine("LISTA DE NOMES APOS REMOCAO");
+            foreach (string nome in listaDeNomes)
+            {
+                System.Console.WriteLine(nome);
+            }
+
+            //METODO RemoveRange//REMOVE DA LISTA UMA PALAVRA QUE COMECA COM M
+            listaDeNomes.RemoveRange(2,2);// remove pelo indice e depois 
+            System.Console.WriteLine("---------------------------");
+            System.Console.WriteLine("LISTA DE NOMES APOS REMOCAO");
+            foreach (string nome in listaDeNomes)
+            {
+                System.Console.WriteLine(nome);
+            }
+
+
+
+
+
+
 
             //METODOS DE SUPORTE DO PROGRMA
             ReiniciarPrograma();
-
         }
-
-
-
-
-        //METODOS DE INTERAÇÃO COM O USUARIO
-        static void ApresentacaoAlgoritmo()
-        {
-            //DESCRICAO ALGORITIMOS MEDIA COM VETORES E FOR 
-            Console.WriteLine("\n\t***ALGORITIMOS APRESENTANDO ARRAYS UNIDIMENSIONAIS - VETORES***\n");
-
-            //ATRIBUINDO VALORES INDIVIDUALMENTE
-            //Eu posso atribuir valores individualmente, para isso eu inicializo o vetor e depois para atribuir eu coloco<nomeDaVariável>[posição ou índice] = valor que eu quero atribuir
-            int[] vetorDeInteiro = new int[3]; //o vetor foi declarado
-
-            vetorDeInteiro[0] = 124; // atribuindo o valor individualmente - comeca o indice do zero
-            vetorDeInteiro[1] = 8; // atribuindo o valor individualmente
-            vetorDeInteiro[2] = 32; // atribuindo o valor individualmente
-
-            Console.WriteLine("VETOR DE INTEIRO NA POSICAO [0] = {0}", vetorDeInteiro[0]);//124
-            Console.WriteLine("VETOR DE INTEIRO NA POSICAO [1] = {0}", vetorDeInteiro[1]);//8
-            Console.WriteLine("VETOR DE INTEIRO NA POSICAO [2] = {0}", vetorDeInteiro[2]);//32
-        }
-
 
         //METODOS DE SUPORTE DO PROGRAMA
         static void ReiniciarPrograma()
@@ -112,3 +139,4 @@ namespace AulasCsharp2025
         }
     }
 }
+

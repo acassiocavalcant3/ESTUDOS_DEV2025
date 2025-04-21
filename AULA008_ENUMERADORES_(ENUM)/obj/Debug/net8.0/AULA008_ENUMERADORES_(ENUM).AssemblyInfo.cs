@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AULA008_ENUMERADORES_(ENUM)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31625fe143175e255186ed40fbb0e174ee3df7a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ee6fe43f2be1d7a7ba1c28bfeebb4c4ff2977a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AULA008_ENUMERADORES_(ENUM)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AULA008_ENUMERADORES_(ENUM)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

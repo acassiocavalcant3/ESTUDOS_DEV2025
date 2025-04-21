@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CURSO_POO_NELIO_ALVES/1.0.0": {
+        "runtime": {
+          "CURSO_POO_NELIO_ALVES.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CURSO_POO_NELIO_ALVES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

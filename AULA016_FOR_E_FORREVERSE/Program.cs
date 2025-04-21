@@ -70,12 +70,12 @@ namespace AulasCsharp2025
         {
             //ALGORITMO MEDIA DE NOTA COM FOR
 
-            for (int contador = 0; contador < notas.Length; contador++) //for tradicional//vetor de 4 posicoes
+            for (int i = 0; i < notas.Length; i++) //for tradicional//vetor de 4 posicoes
             {
             back:
-                Console.Write($"DIGITE A NOTA DO {contador + 1}º BIMESTRE: ");
-                notas[contador] = double.Parse(Console.ReadLine());
-                if ((notas[contador] > 100) || ((notas[contador] < 0)))//caso digite um numero fora do range (0 - 100)
+                Console.Write($"DIGITE A NOTA DO {i + 1}º BIMESTRE: ");
+                notas[i] = double.Parse(Console.ReadLine());
+                if ((notas[i] > 100) || ((notas[i] < 0)))//caso digite um numero fora do range (0 - 100)
                 {
                     Console.WriteLine("\tNOTA INVALIDA! DIGITE UMA NOTA ENTRE 0 E 100 \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
                     Console.ReadLine();

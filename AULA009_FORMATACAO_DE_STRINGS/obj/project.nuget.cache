@@ -1,14 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DxkGnjna5Js=",
+  "dgSpecHash": "RqVSgn8TfBM=",
   "success": true,
   "projectFilePath": "D:\\Desktop\\ESTUDOS_DEV2025\\AULA009_FORMATACAO_DE_STRINGS\\AULA009_FORMATACAO_DE_STRINGS.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\WINDOWS 10\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.200\\microsoft.net.sdk.compilers.toolset.9.0.200.nupkg.sha512",
-    "C:\\Users\\WINDOWS 10\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.13\\microsoft.windowsdesktop.app.ref.8.0.13.nupkg.sha512",
-    "C:\\Users\\WINDOWS 10\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.13\\microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "C:\\Users\\WINDOWS 10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.13\\microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
-    "C:\\Users\\WINDOWS 10\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.13\\microsoft.netcore.app.host.win-x64.8.0.13.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

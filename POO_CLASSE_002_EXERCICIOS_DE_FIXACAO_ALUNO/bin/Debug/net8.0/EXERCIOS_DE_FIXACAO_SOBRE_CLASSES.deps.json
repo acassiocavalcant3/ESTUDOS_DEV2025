@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EXERCIOS_DE_FIXACAO_SOBRE_CLASSES/1.0.0": {
+        "runtime": {
+          "EXERCIOS_DE_FIXACAO_SOBRE_CLASSES.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EXERCIOS_DE_FIXACAO_SOBRE_CLASSES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EXERCICIO013_CALCAULAR_TRIANGULOS/1.0.0": {
+        "runtime": {
+          "EXERCICIO013_CALCAULAR_TRIANGULOS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EXERCICIO013_CALCAULAR_TRIANGULOS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

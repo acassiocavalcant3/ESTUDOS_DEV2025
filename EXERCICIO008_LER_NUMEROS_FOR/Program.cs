@@ -23,7 +23,7 @@ namespace ExercicioCsharp2025
     {
         //VARIAVEIS GLOBAIS
         static int xVezes = 0;
-        static double[] numerosDigitados;
+        static List <double> numerosDigitados = new List <double> ();
         static int dentroDoIntervalo = 0;
         static int foraDoIntervalo = 0;
 
@@ -70,28 +70,25 @@ namespace ExercicioCsharp2025
 
             while ((xVezes <= 0) || (xVezes > 10))
             {
-                Console.WriteLine("\tNUMERO INVALIDO! DIGITE UM NUMERO ENTRE 0 E 10 \nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
-                Console.ReadLine();
                 Console.Clear();
-                ApresentacaoAlgoritmo();
+                Console.WriteLine("\tNUMERO INVALIDO! DIGITE UM NUMERO ENTRE 0 E 10! \n\nAPERTE ENTER E SELECIONE UMA OPCAO NOVAMENTE!\n");
+                Console.ReadLine();
+                Console.Clear();                
+                Main();
             }
-
-            Console.WriteLine("\nAPERTE ENTER PARA CONTINUAR!\n");
-            Console.ReadLine();
-            Console.Clear();
 
         }
 
         static void LerNumerosComWhile()
         {
-            //ALGORITMO MEDIA DE NOTA COM FOR
-
+            //SO CONSEGUI FAZER COM LIST
+            Console.Clear();
             int contador = 0;
 
             while (contador < xVezes)
             {
                 Console.Write($"DIGITE O {contador + 1}º NUMERO: ");
-                numerosDigitados[contador] = double.Parse(Console.ReadLine());
+                numerosDigitados.Add(double.Parse(Console.ReadLine()));
                 contador++;
             }
         }
@@ -145,6 +142,8 @@ namespace ExercicioCsharp2025
             {
                 case "s":
                 case "S":
+
+                    Console.Clear();
                     Main();
                     break;
 

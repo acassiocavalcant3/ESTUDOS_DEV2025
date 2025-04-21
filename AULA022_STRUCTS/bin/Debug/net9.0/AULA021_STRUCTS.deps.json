@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "AULA021_STRUCTS/1.0.0": {
+        "runtime": {
+          "AULA021_STRUCTS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA021_STRUCTS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

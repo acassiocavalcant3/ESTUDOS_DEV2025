@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA020_COLLECTIONS_LISTS/1.0.0": {
+        "runtime": {
+          "AULA020_COLLECTIONS_LISTS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA020_COLLECTIONS_LISTS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

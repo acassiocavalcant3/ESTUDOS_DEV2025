@@ -27,34 +27,59 @@ namespace AulasCsharp2025
 {
     class program
     {
-        //
-        //DECLARACAO DE ARRAYS
-        static double[] notas = new double[4];//UM ARRAY(VETOR) DO TIPO DOUBLE COM 4 POSICOES
-        static tipo[] nomeDoArray = new tipo[tamanhodoarray];
+        // //
+        // //DECLARACAO DE ARRAYS
+        // static double[] notas = new double[4];//UM ARRAY(VETOR) DO TIPO DOUBLE COM 4 POSICOES
+        // //static tipo[] nomeDoArray = new tipo[tamanhodoarray];
 
-        //DECLARACAO E ATRIBUICAO DE ARRAYS
-        static string[] alunos = { "Carla", "Danilo", "Eduardo", "Gustavo" };//UM ARRAY(VETOR) DO TIPO STRING COM 4 POSICOES
-                                                                             //static tipo[] nomeDoArray = {valores atribuidos e separados por vírgula};
-
-
+        // //DECLARACAO E ATRIBUICAO DE ARRAYS
+        // static string[] alunos = { "Carla", "Danilo", "Eduardo", "Gustavo" };//UM ARRAY(VETOR) DO TIPO STRING COM 4 POSICOES
+         //static tipo[] nomeDoArray = {valores atribuidos e separados por vírgula};
 
 
-        ////VALORES PADROES DE ARRAYS
-        static int[] arrayInt = new int[5];//VALOR PADRÃO = 0 - vetor de int 
-        static string[] arrayString = new string[5];//VALOR PADRÃO = "" - vetor de string
-        static bool[] arrayBoolean = new bool[5];//VALOR PADRÃO = FALSE - vetor de bool
-        static double[] arrayDouble = new double[5];//VALOR PADRÃO = 0.0 - vetor de double
-                                                    //static ClasseArray[] arrayClasse = new ClasseArray[5];//VALOR PADRÃO = NULL - vetor de classe
+
+
+        // ////VALORES PADROES DE ARRAYS
+        // static int[] arrayInt = new int[5];//VALOR PADRÃO = 0 - vetor de int 
+        // static string[] arrayString = new string[5];//VALOR PADRÃO = "" - vetor de string
+        // static bool[] arrayBoolean = new bool[5];//VALOR PADRÃO = FALSE - vetor de bool
+        // static double[] arrayDouble = new double[5];//VALOR PADRÃO = 0.0 - vetor de double
+        // //static ClasseArray[] arrayClasse = new ClasseArray[5];//VALOR PADRÃO = NULL - vetor de classe
 
 
 
         static void Main()
         {
+            System.Console.Write("Digite a quantidade: ");
+            int n = int.Parse(Console.ReadLine());
+
+            Produto[] vetor = new Produto[n];
+
+
+            // //----------------------------------------------------------
+            // Console.Write("Digite a quantidade: ");
+            // int posicoesVetor =  int.Parse(Console.ReadLine());
+            // double[] vetor = new double[posicoesVetor];
+
+            // for (int i = 0; i < posicoesVetor; i++)
+            // {
+            //     vetor[i] = double.Parse(Console.ReadLine());
+            // }
+
+            // double soma = 0;
+            // for (int i = 0; i < posicoesVetor; i++)
+            // {
+            //     soma += vetor[i];
+            // }
+
+            // double media = soma/posicoesVetor;
+
+            // System.Console.WriteLine(media);
 
             //METODOS DE INTERAÇÃO COM O USUARIO
-            ApresentacaoAlgoritmo();
+            //ApresentacaoAlgoritmo();
 
-            //METODOS DE SUPORTE DO PROGRMA
+            //METODOS DE SUPORTE DO PROGRAMA
             ReiniciarPrograma();
 
         }
