@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA023_DATA_TIME/1.0.0": {
+        "runtime": {
+          "AULA023_DATA_TIME.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA023_DATA_TIME/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

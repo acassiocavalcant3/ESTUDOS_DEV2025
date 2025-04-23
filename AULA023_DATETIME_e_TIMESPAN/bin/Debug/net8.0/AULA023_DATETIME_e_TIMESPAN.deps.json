@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AULA023_DATETIME_e_TIMESPAN/1.0.0": {
+        "runtime": {
+          "AULA023_DATETIME_e_TIMESPAN.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AULA023_DATETIME_e_TIMESPAN/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
